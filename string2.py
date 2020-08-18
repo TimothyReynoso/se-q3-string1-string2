@@ -24,9 +24,17 @@ __author__ = "???"
 
 def verbing(s):
     # your code here
-    return
-
-
+    if len(s) < 3:
+        return f"{s}"
+    if len(s) >= 3 and s[-3:]== "ing":
+        return f"{s}ly" 
+    else:
+        return f"{s}ing"
+    
+   
+    
+    
+    
 # E. not_bad
 # Given a string, find the first occurrence of the substrings
 # 'not' and 'bad'. If the 'bad' follows the 'not', replace
@@ -38,7 +46,15 @@ def verbing(s):
 
 def not_bad(s):
     # your code here
-    return
+    not_placement = s.find('not')
+    bad_placement = s.find('bad') 
+    if not_placement == -1:
+        return s
+    if not_placement < bad_placement:
+        not_needed = s[not_placement:bad_placement+3:]
+        return s.replace(not_needed, "good")
+    if not_placement > bad_placement:
+        return s
 
 
 # F. front_back
@@ -53,7 +69,14 @@ def not_bad(s):
 
 def front_back(a, b):
     # your code here
-    return
+    a_half = len(a)//2
+    b_half = len(b)//2
+    if a_half % 2 == 0:
+        return f"{a[0:a_half]}{b[0:b_half]}{a[a_half:]}{b[b_half:]}"
+    if a_half % 2 != 0:
+        return a[0:a_half+1]
+        #return f"{a[0:a_half]}{b[0:b_half]}{a[a_half:]}{b[b_half:]}"
+    
 
 
 # Provided simple test() function used in main() to print
