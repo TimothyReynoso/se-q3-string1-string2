@@ -78,7 +78,6 @@ def front_back(a, b):
         #return f"{a[0:a_half]}{b[0:b_half]}{a[a_half:]}{b[b_half:]}"
     
 
-
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
 def test(got, expected):

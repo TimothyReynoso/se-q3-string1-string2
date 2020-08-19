@@ -54,7 +54,6 @@ def both_ends(s):
         s = ''
         return s
 
-
 # C. fix_start
 # Given a string s, return a string where all occurrences
 # of its first character have been changed to '*', except
