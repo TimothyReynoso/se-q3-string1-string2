@@ -4,7 +4,7 @@ Kenzie assignment: String2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+__author__ = "Timothy Reynoso"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -26,15 +26,10 @@ def verbing(s):
     # your code here
     if len(s) < 3:
         return f"{s}"
-    if len(s) >= 3 and s[-3:]== "ing":
-        return f"{s}ly" 
+    if len(s) >= 3 and s[-3:] == "ing":
+        return f"{s}ly"
     else:
         return f"{s}ing"
-    
-   
-    
-    
-    
 # E. not_bad
 # Given a string, find the first occurrence of the substrings
 # 'not' and 'bad'. If the 'bad' follows the 'not', replace
@@ -47,7 +42,7 @@ def verbing(s):
 def not_bad(s):
     # your code here
     not_placement = s.find('not')
-    bad_placement = s.find('bad') 
+    bad_placement = s.find('bad')
     if not_placement == -1:
         return s
     if not_placement < bad_placement:
@@ -75,8 +70,8 @@ def front_back(a, b):
         return f"{a[0:a_half]}{b[0:b_half]}{a[a_half:]}{b[b_half:]}"
     if a_half % 2 != 0:
         return a[0:a_half+1]
-        #return f"{a[0:a_half]}{b[0:b_half]}{a[a_half:]}{b[b_half:]}"
-    
+        # return f"{a[0:a_half]}{b[0:b_half]}{a[a_half:]}{b[b_half:]}"
+
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
