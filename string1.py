@@ -30,8 +30,8 @@ __author__ = "Timothy Reynoso"
 def donuts(count):
     # your code here
     if count < 10:
-        return f"Number of donuts: {count}"  
-    else:  
+        return f"Number of donuts: {count}"
+    else:
         return f"Number of donuts: many"
 
 
@@ -54,7 +54,6 @@ def both_ends(s):
         s = ''
         return s
 
-
 # C. fix_start
 # Given a string s, return a string where all occurrences
 # of its first character have been changed to '*', except
@@ -71,11 +70,7 @@ def fix_start(s):
     first_letter = s[0]
     new_word = s.replace(first_letter, "*")
     no_first_letter = new_word[1:]
-    
     return f"{first_letter}{no_first_letter}"
-             
-
-
 # D. mix_up
 # Given strings a and b, return a single string with a and
 # b separated by a space '<a> <b>', except swap the first
